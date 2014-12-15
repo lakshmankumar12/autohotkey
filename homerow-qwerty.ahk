@@ -50,7 +50,7 @@ AppsKey & ] up::SendInput {Shift Up}{Ins Up}
 AppsKey & x::SendInput {Blind}{Del Down}
 AppsKey & [::SendInput {Blind}{Ins Down}
 AppsKey & w::SendInput {Ctrl down}{F4}{Ctrl up}
-AppsKey & e::SendInput {Alt down}{F4}{Alt up}
+AppsKey & t::SendInput {Alt down}{F4}{Alt up}
 
 AppsKey & p::SendInput {Blind}{BS Down}
 AppsKey & BS::SendInput {Blind}{BS Down}
@@ -106,19 +106,19 @@ AppsKey & 7::
 Return
 
 AppsKey & i::
- MouseMove, 0, -50, 0, R ;Move the mouse onehundred pixel Up
+ MouseMove, 0, -25, 0, R ;Move the mouse onehundred pixel Up
 Return
 
 AppsKey & u::
- MouseMove, 0, 50, 0, R ;Move the mouse onehundred pixel Down
+ MouseMove, 0, 25, 0, R ;Move the mouse onehundred pixel Down
 Return
 
 AppsKey & o::
- MouseMove, 50, 0, 0, R ;Move the mouse onehundred pixel to the right
+ MouseMove, 25, 0, 0, R ;Move the mouse onehundred pixel to the right
 Return
 
 AppsKey & y::
- MouseMove, -50, 0, 0, R ;Move the mouse onehundred pixel to the left
+ MouseMove, -25, 0, 0, R ;Move the mouse onehundred pixel to the left
 Return
 
 ;Scroll-lock
@@ -128,7 +128,7 @@ AppsKey & 8::
  SendInput {Click,Right} 
 Return
 
-AppsKey & v::
+AppsKey & e::
  SendInput {AppsKey}
 Return
 
