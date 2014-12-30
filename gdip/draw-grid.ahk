@@ -175,7 +175,7 @@ Loop
     MouseMove, 0, 0, 0
     MouseMove, %value_x%, %value_y%, 0
 GetAgain:
-	Input, UserInput, T5 L1, {Enter}{Escape}, g,q,i,h,j,k,l,r,s,d
+	Input, UserInput, T5 L1, {Enter}{Escape}, ,,,g,q,i,h,j,k,l,n,m,.,r,s,d
 	IfInString, ErrorLevel, Max
     {
       GoSub, Quit
@@ -241,6 +241,26 @@ GetAgain:
     else If UserInput = l
     {
        MouseMove, 25, 0, 0, R
+       Goto, GetAgain
+    }
+    else If UserInput = n
+    {
+       MouseMove, -5, 0, 0, R
+       Goto, GetAgain
+    }
+    else If UserInput = m
+    {
+       MouseMove, 0, 5, 0, R
+       Goto, GetAgain
+    }
+    else If UserInput = ,
+    {
+       MouseMove, 0, -5, 0, R
+       Goto, GetAgain
+    }
+    else If UserInput = .
+    {
+       MouseMove, 5, 0, 0, R
        Goto, GetAgain
     }
     GoSub, Quit
