@@ -15,6 +15,10 @@ If !pToken := Gdip_Startup()
 }
 OnExit, Exit
 
+F8::
+ SendInput {Click,Left} 
+Return
+
 F9::
 ; Set the width and height we want as our drawing area, to draw everything in. This will be the dimensions of our bitmap
 Width :=1920, Height := 1080
@@ -170,7 +174,8 @@ Loop
     value_y := positions_y%inputvalue%
     MouseMove, 0, 0, 0
     MouseMove, %value_x%, %value_y%, 0
-	Input, UserInput, T5 L1, {Enter}{Escape}, g,j,k,r,s,d
+GetAgain:
+	Input, UserInput, T5 L1, {Enter}{Escape}, g,q,i,h,j,k,l,r,s,d
 	IfInString, ErrorLevel, Max
     {
       GoSub, Quit
@@ -183,11 +188,11 @@ Loop
     { 
        SendInput {Click,Left} 
     }
-    else If UserInput = j
+    else If UserInput = q
     { 
        GoSub, Quit
     }
-    else If UserInput = k
+    else If UserInput = i
     { 
        delay := 200
        Gui, 5: +AlwaysOnTop -Caption +LastFound +ToolWindow
@@ -217,6 +222,26 @@ Loop
     {
        SendInput {Click,Left} 
        SendInput {Click down,Left} 
+    }
+    else If UserInput = h
+    {
+       MouseMove, -25, 0, 0, R
+       Goto, GetAgain
+    }
+    else If UserInput = j
+    {
+       MouseMove, 0, 25, 0, R
+       Goto, GetAgain
+    }
+    else If UserInput = k
+    {
+       MouseMove, 0, -25, 0, R
+       Goto, GetAgain
+    }
+    else If UserInput = l
+    {
+       MouseMove, 25, 0, 0, R
+       Goto, GetAgain
     }
     GoSub, Quit
 }
