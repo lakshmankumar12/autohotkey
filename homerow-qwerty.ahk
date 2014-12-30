@@ -220,16 +220,4 @@ Return
   MouseMove, %mouseSaveXposA%, %mouseSaveYposA%, 0
 Return
 
-AppsKey & c::
- Run "www.google.com/inputtools/try/"
- WinWait "Try Google Input Tools online"
- WinActivate "Try Google Input Tools online"
-Return
 
-AppsKey & b::
- Send {Shift}{tab}
- Send f
- sleep, 200
- Send ge
- Send {Left}{Left}{Down}{Down}{Left}{Down}{Enter}
-Return
