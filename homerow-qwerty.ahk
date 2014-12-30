@@ -149,6 +149,14 @@ AppsKey & 1::
  SendInput {Ctrl up}{2}
 Return
 
+AppsKey & F7::
+ Send {Volume_Up}
+Return
+
+AppsKey & F8::
+ Send {Volume_Down}
+Return
+
 ; Make Windows Key + Apps Key work like Caps Lock
 #AppsKey::Capslock
 
