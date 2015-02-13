@@ -92,11 +92,6 @@ AppsKey & g::
  SendInput {Click,Left} 
 Return
 
-AppsKey & 5::
- SendInput {Click,Left} 
- SendInput {Click down,Left} 
-Return
-
 AppsKey & 6::
  SendInput {Click down,Left} 
 Return
@@ -128,7 +123,7 @@ AppsKey & 8::
  SendInput {Click,Right} 
 Return
 
-AppsKey & e::
+AppsKey & r::
  SendInput {AppsKey}
 Return
 
@@ -147,6 +142,15 @@ AppsKey & 1::
  sleep, 200
  SendInput {Ctrl down}{2}
  SendInput {Ctrl up}{2}
+Return
+
+;Activate capure mode in vm
+AppsKey & 5::
+ SendInput {RAlt down}
+ SendInput {RAlt up}
+ sleep, 200
+ SendInput {Alt down}{Tab}
+ SendInput {Alt up}
 Return
 
 AppsKey & F7::
