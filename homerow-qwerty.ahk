@@ -232,4 +232,7 @@ Return
   MouseMove, %mouseSaveXposA%, %mouseSaveYposA%, 0
 Return
 
+^!r::Reload
+
+^SPACE::  Winset, Alwaysontop, , A
 
