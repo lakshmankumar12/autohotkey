@@ -139,9 +139,6 @@ Return
 AppsKey & 1::
  SendInput {LWin down}{3}
  SendInput {LWin up}{3}
- sleep, 200
- SendInput {Ctrl down}{2}
- SendInput {Ctrl up}{2}
 Return
 
 ;Activate capure mode in vm
