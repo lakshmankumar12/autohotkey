@@ -161,6 +161,13 @@ Return
 ; Make Windows Key + Apps Key work like Caps Lock
 #AppsKey::Capslock
 
+;Active putty
+AppsKey & F11::
+ IfWinExist lakshmankumar.ddns.net
+ {
+   WinActivate
+ }
+Return
 
 F12::
 WinGetTitle, title, A

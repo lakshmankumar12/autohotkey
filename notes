@@ -1,0 +1,44 @@
+
+
+
+
+
+a - None                                                       
+b - None
+c - None
+d - Page-Down
+e - None
+f - Page-UP
+g - main Mouse click
+h - Left
+i - Mouse-move up - fast
+j - Down
+k - Up
+l - Right
+m - Mouse-move down - slow
+n - Mouse-move left - slow
+o - Mouse-move right - fast
+p - Back space
+q - None
+r - Apps key
+s - None
+t - Alt-f4
+u - Mouse-move down - fast
+v - None
+w - Ctrl-F4
+x - Del
+y - Mouse-move left fast
+z - ctrl-alt-tab
+
+
+1     2     3     4     5     6     7     8     9     0
+ Hgot  <==   ==>   End   RigAt Dwn?  Up?   RClk  ScLk  Home
+-----------------------------------------------------------
+q     w     e     r     t     y     u     i     o     p
+ None  c-f4  None  app   a-f4  <-M   v-M   Up-M  ->M   <=
+-----------------------------------------------------------
+ a     s     d     f     g     h     j     k     l     ;
+  None  None  PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
+-----------------------------------------------------------
+     z     x     c     v     b     n     m     ,     .     /
+      CATb  Del   None  None  None  <-m   v-m   Up-m  ->m   ScrlDwn
