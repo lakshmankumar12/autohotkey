@@ -150,16 +150,24 @@ AppsKey & 5::
  SendInput {Alt up}
 Return
 
+; Make Windows Key + Apps Key work like Caps Lock
+#AppsKey::Capslock
+
+;Active workrave
+AppsKey & F10::
+ IfWinExist Workrave
+ {
+   WinActivate
+ }
+Return
+
 AppsKey & F7::
- Send {Volume_Up}
+  Send {Browser_Back}
 Return
 
 AppsKey & F8::
- Send {Volume_Down}
+  Send {Browser_Forward}
 Return
-
-; Make Windows Key + Apps Key work like Caps Lock
-#AppsKey::Capslock
 
 ;Active putty
 AppsKey & F11::

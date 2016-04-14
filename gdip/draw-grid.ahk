@@ -172,8 +172,10 @@ Loop
       GoSub, Quit
     }
     value_y := positions_y%inputvalue%
+    CoordMode, Mouse, Screen
     MouseMove, 0, 0, 0
     MouseMove, %value_x%, %value_y%, 0
+    CoordMode, Mouse, Relative
 GetAgain:
 	Input, UserInput, T5 L1, {Enter}{Escape}, ,,,g,q,i,h,j,k,l,n,m,.,r,s,d
 	IfInString, ErrorLevel, Max
