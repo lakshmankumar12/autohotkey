@@ -49,11 +49,18 @@ AppsKey & ] up::SendInput {Shift Up}{Ins Up}
 
 AppsKey & x::SendInput {Blind}{Del Down}
 AppsKey & [::SendInput {Blind}{Ins Down}
-AppsKey & w::SendInput {Ctrl down}{F4}{Ctrl up}
-AppsKey & t::SendInput {Alt down}{F4}{Alt up}
+AppsKey & w::SendInput {Ctrl down}{w}{Ctrl up}
+AppsKey & t::SendInput {Ctrl down}{t}{Ctrl up}
 
 AppsKey & p::SendInput {Blind}{BS Down}
 AppsKey & BS::SendInput {Blind}{BS Down}
+
+AppsKey & q::SendInput {Esc}
+AppsKey & a::SendInput {Alt down}{Esc}{Alt up}
+
+AppsKey & e::
+    Run, "C:\Lakshman\software\autohotkey\Window Switcher"
+Return
 
 ; Make AppsKey & Enter equivalent to Control+Enter
 ; AppsKey & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}

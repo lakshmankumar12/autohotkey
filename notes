@@ -1,13 +1,9 @@
 
-
-
-
-
-a - None                                                       
+a - alt-esc
 b - None
-c - None
+c - Mouse highlight
 d - Page-Down
-e - None
+e - windows-switcher
 f - Page-UP
 g - main Mouse click
 h - Left
@@ -19,26 +15,37 @@ m - Mouse-move down - slow
 n - Mouse-move left - slow
 o - Mouse-move right - fast
 p - Back space
-q - None
+q - Esc
 r - Apps key
 s - None
-t - Alt-f4
+t - ctrl-t
 u - Mouse-move down - fast
 v - None
-w - Ctrl-F4
+w - ctrl-w
 x - Del
 y - Mouse-move left fast
 z - ctrl-alt-tab
+
+F1 - none
+F2 - none
+F3 - none
+F4 - media pause
+F5 - vol-down
+F6 - vol-up
+F7 - browser-back
+F8 - browser-fwd
+F9 -
+F10 -
 
 
 1     2     3     4     5     6     7     8     9     0
  Hgot  <==   ==>   End   RigAt Dwn?  Up?   RClk  ScLk  Home
 -----------------------------------------------------------
 q     w     e     r     t     y     u     i     o     p
- None  c-f4  None  app   a-f4  <-M   v-M   Up-M  ->M   <=
+ Esc   c-w  None  app   c-t   <-M   v-M   Up-M  ->M   <=
 -----------------------------------------------------------
  a     s     d     f     g     h     j     k     l     ;
-  None  None  PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
+  a-Es  None  PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
 -----------------------------------------------------------
      z     x     c     v     b     n     m     ,     .     /
-      CATb  Del   None  None  None  <-m   v-m   Up-m  ->m   ScrlDwn
+      CATb  Del   MsHl  None  None  <-m   v-m   Up-m  ->m   ScrlDwn
