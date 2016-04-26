@@ -127,9 +127,6 @@ AppsKey & r::
  SendInput {AppsKey}
 Return
 
-Appskey & F6::Send {Blind}{F6 Down}
-AppsKey & F6 up::Send {Blind}{F6 Up}
-
 AppsKey & z::
  SendInput {Ctrl Down}{Alt Down}{Tab Down}
  SendInput {Ctrl Up}{Alt Up}{Tab Up}
@@ -161,6 +158,18 @@ AppsKey & F10::
  }
 Return
 
+AppsKey & F4::
+  Send {Media_Play_Pause}
+Return
+
+AppsKey & F5::
+  Send {Volume_Down}
+Return
+
+AppsKey & F6::
+  Send {Volume_Up}
+Return
+
 AppsKey & F7::
   Send {Browser_Back}
 Return
@@ -175,6 +184,25 @@ AppsKey & F11::
  {
    WinActivate
  }
+Return
+
+;Show where the mouse is
+AppsKey & c::
+       delay := 200
+       MouseGetPos, value_x, value_y
+       Gui, 5: +AlwaysOnTop -Caption +LastFound +ToolWindow
+       Gui, 5: Color, FF3333
+       WinSet, TransColor, %color% %transparency%
+       Gui,5: Show, x%value_x% y%value_y% w20 h20 noactivate
+       Loop, 1
+       {
+           Sleep, %delay%
+           WinHide
+           Sleep, %delay%
+           WinShow
+       }
+       Sleep, %delay%
+       Gui, 5: Destroy
 Return
 
 F12::
