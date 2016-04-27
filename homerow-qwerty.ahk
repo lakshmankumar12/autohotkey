@@ -47,13 +47,16 @@ AppsKey & ] up::SendInput {Shift Up}{Ins Up}
 
 ; AppsKey + xiwe pBS
 
-AppsKey & x::SendInput {Blind}{Del Down}
-AppsKey & [::SendInput {Blind}{Ins Down}
+AppsKey & x::SendInput {Blind}{Del Down}{Del up}
 AppsKey & w::SendInput {Ctrl down}{w}{Ctrl up}
 AppsKey & t::SendInput {Ctrl down}{t}{Ctrl up}
+AppsKey & 6::SendInput {Ctrl down}{c}{Ctrl up}
+AppsKey & 7::SendInput {Ctrl down}{u}{Ctrl up}
 
-AppsKey & p::SendInput {Blind}{BS Down}
-AppsKey & BS::SendInput {Blind}{BS Down}
+AppsKey & s::SendInput {Blind}{BS Down}{BS Up}
+AppsKey & BS::SendInput {Blind}{BS Down}{BS Up}
+
+AppsKey & p::SendInput {Ctrl down}{p}{Ctrl up}
 
 AppsKey & q::SendInput {Esc}
 AppsKey & a::SendInput {Alt down}{Esc}{Alt up}
@@ -64,10 +67,6 @@ Return
 
 ; Make AppsKey & Enter equivalent to Control+Enter
 ; AppsKey & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
-
-; Make AppsKey & Alt Equivalent to Control+Alt
-AppsKey::SendInput {Ctrl down}{Alt Down}
-AppsKey up::SendInput {Ctrl up}{Alt up}
 
 ; Mouse scroll
 AppsKey & `;::
@@ -96,15 +95,7 @@ AppsKey & n::
 Return
 
 AppsKey & g::
- SendInput {Click,Left} 
-Return
-
-AppsKey & 6::
- SendInput {Click down,Left} 
-Return
-
-AppsKey & 7::
- SendInput {Click up,Left} 
+ SendInput {Click,Left}
 Return
 
 AppsKey & i::
@@ -227,17 +218,6 @@ return
     Run calc.exe
     WinWait Calculator
     WinActivate
-  } 
-Return
-
-^!a::
-  IfWinExist AirDroid
-  {
-    WinActivate
-  }
-  else
-  {
-    MsgBox, "Airdroid window not found"
   } 
 Return
 

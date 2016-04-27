@@ -17,7 +17,7 @@ o - Mouse-move right - fast
 p - Back space
 q - Esc
 r - Apps key
-s - None
+s - Backspace
 t - ctrl-t
 u - Mouse-move down - fast
 v - None
@@ -25,6 +25,19 @@ w - ctrl-w
 x - Del
 y - Mouse-move left fast
 z - ctrl-alt-tab
+
+1 - Hangout
+2 - Ctrl-Pg Dn
+3 - Ctrl-Pg Up
+4 - End
+5 - Right Alt
+6 - ctrl-c
+7 - ctrl-u
+8 - Right click
+9 - scroll lock
+0 - Home
+
+] - Shift Ins
 
 F1 - none
 F2 - none
@@ -35,17 +48,19 @@ F6 - vol-up
 F7 - browser-back
 F8 - browser-fwd
 F9 -
-F10 -
+F10 - work rave
+F11 - putty
+F12 - win Title
 
 
 1     2     3     4     5     6     7     8     9     0
- Hgot  <==   ==>   End   RigAt Dwn?  Up?   RClk  ScLk  Home
+ Hgot  <==   ==>   End   RigAt c-c  c-u    RClk  ScLk  Home
 -----------------------------------------------------------
-q     w     e     r     t     y     u     i     o     p
- Esc   c-w  None  app   c-t   <-M   v-M   Up-M  ->M   <=
+q     w     e     r     t     y     u     i     o     p       [     ]
+ Esc   c-w  W-Sw  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  None  S-Ins
 -----------------------------------------------------------
  a     s     d     f     g     h     j     k     l     ;
-  a-Es  None  PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
+  a-Es  <=    PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
 -----------------------------------------------------------
      z     x     c     v     b     n     m     ,     .     /
       CATb  Del   MsHl  None  None  <-m   v-m   Up-m  ->m   ScrlDwn
