@@ -1,7 +1,7 @@
 
 a - alt-esc
 b - None
-c - Mouse highlight
+c - ctrl-c
 d - Page-Down
 e - windows-switcher
 f - Page-UP
@@ -30,8 +30,8 @@ z - ctrl-alt-tab
 2 - Ctrl-Pg Dn
 3 - Ctrl-Pg Up
 4 - End
-5 - Right Alt
-6 - ctrl-c
+5 - Ask and switch window
+6 - Mouse Highlight
 7 - ctrl-u
 8 - Right click
 9 - scroll lock
@@ -47,14 +47,14 @@ F5 - vol-down
 F6 - vol-up
 F7 - browser-back
 F8 - browser-fwd
-F9 -
+F9 - google-play-music
 F10 - work rave
 F11 - putty
 F12 - win Title
 
 
 1     2     3     4     5     6     7     8     9     0
- Hgot  <==   ==>   End   RigAt c-c  c-u    RClk  ScLk  Home
+ Hgot  <==   ==>   End   al-tb MsHl c-u    RClk  ScLk  Home
 -----------------------------------------------------------
 q     w     e     r     t     y     u     i     o     p       [     ]
  Esc   c-w  W-Sw  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  None  S-Ins
@@ -63,4 +63,6 @@ q     w     e     r     t     y     u     i     o     p       [     ]
   a-Es  <=    PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
 -----------------------------------------------------------
      z     x     c     v     b     n     m     ,     .     /
-      CATb  Del   MsHl  None  None  <-m   v-m   Up-m  ->m   ScrlDwn
+      CATb  Del   c-c   None  None  <-m   v-m   Up-m  ->m   ScrlDwn
+
+

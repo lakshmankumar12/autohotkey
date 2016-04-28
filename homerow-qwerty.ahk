@@ -47,10 +47,10 @@ AppsKey & ] up::SendInput {Shift Up}{Ins Up}
 
 ; AppsKey + xiwe pBS
 
-AppsKey & x::SendInput {Blind}{Del Down}{Del up}
+AppsKey & x::SendInput {Del Down}{Del up}
 AppsKey & w::SendInput {Ctrl down}{w}{Ctrl up}
 AppsKey & t::SendInput {Ctrl down}{t}{Ctrl up}
-AppsKey & 6::SendInput {Ctrl down}{c}{Ctrl up}
+AppsKey & c::SendInput {Ctrl down}{c}{Ctrl up}
 AppsKey & 7::SendInput {Ctrl down}{u}{Ctrl up}
 
 AppsKey & s::SendInput {Blind}{BS Down}{BS Up}
@@ -61,9 +61,6 @@ AppsKey & p::SendInput {Ctrl down}{p}{Ctrl up}
 AppsKey & q::SendInput {Esc}
 AppsKey & a::SendInput {Alt down}{Esc}{Alt up}
 
-AppsKey & e::
-    Run, "C:\Lakshman\software\autohotkey\Window Switcher"
-Return
 
 ; Make AppsKey & Enter equivalent to Control+Enter
 ; AppsKey & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
@@ -136,13 +133,23 @@ AppsKey & 1::
  SendInput {LWin up}{3}
 Return
 
-;Activate capure mode in vm
+; switch window with asking
 AppsKey & 5::
- SendInput {RAlt down}
- SendInput {RAlt up}
- sleep, 200
- SendInput {Alt down}{Tab}
- SendInput {Alt up}
+  InputBox, WindowTitleToMatch, Window Title, Enter a title string., , 275, 120
+  if ErrorLevel {
+
+  }
+  else {
+     SetTitleMatchMode, 2
+     IfWinExist %WindowTitleToMatch%
+     {
+       WinActivate
+     }
+     else
+     {
+        MsgBox, Couldnt find "%WindowTitleToMatch%"
+     }
+  }
 Return
 
 ; Make Windows Key + Apps Key work like Caps Lock
@@ -176,16 +183,30 @@ AppsKey & F8::
   Send {Browser_Forward}
 Return
 
+;Active Pause music india online
+AppsKey & F9::
+ SetTitleMatchMode, 2
+ ;SetTitleMatchMode, Slow
+ WinGetTitle, currWindow, A
+ IfWinExist, MusicIndiaOnline
+ {
+   WinActivate
+   SendInput {Space}
+   SendInput {LWin down}{2}{LWin up}
+   WinActivate, %currWindow%
+ }
+Return
+
 ;Active putty
 AppsKey & F11::
- IfWinExist lakshmankumar.ddns.net
+ IfWinExist, lakshmankumar.ddns.net
  {
    WinActivate
  }
 Return
 
 ;Show where the mouse is
-AppsKey & c::
+AppsKey & 6::
        delay := 200
        MouseGetPos, value_x, value_y
        Gui, 5: +AlwaysOnTop -Caption +LastFound +ToolWindow
@@ -205,7 +226,9 @@ Return
 
 F12::
 WinGetTitle, title, A
-MsgBox, "%title%"
+WinGetTitle, text, A
+WinGetClass, class, A
+MsgBox, "title:%title%,\ntext:%text%,\nclass %class%"
 return
 
 ^!c::
