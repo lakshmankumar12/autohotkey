@@ -66,3 +66,38 @@ q     w     e     r     t     y     u     i     o     p       [     ]
       CATb  Del   c-c   None  None  <-m   v-m   Up-m  ->m   ScrlDwn
 
 
+Combo keys in windows
+
+WIN+
+
+a -
+b - Notification area
+c -
+d - Desktop
+e - Explorer
+f - Find File
+g -
+h -
+i -                                              1     2     3     4     5     6     7     8     9     0
+j -                                                  <-- nth window --   --            --        >
+k -                                              -----------------------------------------------------------
+l - Lock                                         q     w     e     r     t     y     u     i     o     p       [     ]
+m - Minimize all windows                                     Expl         cyle        acc               pres
+n -                                              -----------------------------------------------------------
+o -                                               a     s     d     f     g     h     j     k     l     ;
+p - Presentation mode                              a-Es  <=    Dktp  File                          Lock
+q -                                              -----------------------------------------------------------
+r -                                                   z     x     c     v     b     n     m     ,     .     /
+s -                                                          Mob               Not         MinAl
+t - cycle thru prog on taskbar
+u - Accessibility
+v -
+w -
+x - Mobility
+y -
+z -
+
+
+Links:
+
+Keys - https://autohotkey.com/docs/Hotkeys.htm

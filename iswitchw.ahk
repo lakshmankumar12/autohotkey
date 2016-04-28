@@ -161,7 +161,7 @@ if filterlist <>
 ;
 ; I never use the CapsLock key, that's why I chose it.
 ;
-AppsKey & e::
+#i::
 
 search =
 numallwin = 0

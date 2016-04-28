@@ -244,31 +244,6 @@ return
   } 
 Return
 
-^!t::
-  Gui Destroy
-  Engine = 1
-  Gui Add, Radio, vEngine, Left-Top
-  Gui Add, Radio,, Right-Top
-  Gui Add, Radio,, Left-Bottom
-  Gui Add, Radio,, Right-Bottom
-  Gui Add, Button, Default, OK
-  Gui Show
-  Return
-  
-
-  ButtonOK:
-  Gui Submit
-  SysGet, Mon, MonitorWorkArea, 1
-  if Engine = 1
-      MouseMove, %MonLeft%,%MonTop%,0
-  else if Engine = 2
-      MouseMove, %MonRight%,%MonTop%,0
-  else if Engine = 3
-      MouseMove, %MonLeft%,%MonBottom%,0
-  else if Engine = 4
-      MouseMove, %MonRight%,%MonBottom%,0
-Return
-
 ; **** Mark Mouse Positions
 
 mouseSaveXposA = 0
