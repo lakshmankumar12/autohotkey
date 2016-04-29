@@ -1,3 +1,5 @@
+; Copy-pasted from https://autohotkey.com/board/topic/30487-iswitchw-cosmetically-enhanced-edition/
+;
 ; iswitchw - Incrementally switch between windows using substrings
 ;
 ; [MODIFIED by ezuk, 3 July 2008, changes noted below. Cosmetics only.]
