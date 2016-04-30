@@ -1,6 +1,19 @@
 ; IMPORTANT INFO ABOUT GETTING STARTED: Lines that start with a
 ; semicolon, such as this one, are comments.  They are not executed.
 
+; Source: https://autohotkey.com/board/topic/54990-find-the-blinking-window-on-the-taskbar/
+; **************************************
+; *** Switch to Last Flashing Window ***
+; **************************************
+; set trigger for flashing window
+InitFlashingWinTrigger:
+  flashWinID =
+  Gui +LastFound
+  hWnd := WinExist() , DllCall( "RegisterShellHookWindow", UInt,hWnd )
+  MsgNum := DllCall( "RegisterWindowMessage", Str,"SHELLHOOK" )
+  OnMessage( MsgNum, "ShellMessage" )
+Return
+
 ; See http://duartes.org/gustavo/blog/home-row-computing for more information on this script
 ; See the AutoHotKey docs at http://www.autohotkey.com/docs/  for AutoHotKey documentation
 ; Most of the syntax is described at http://www.autohotkey.com/docs/Hotkeys.htm
@@ -68,7 +81,7 @@ AppsKey & a::SendInput {Alt down}{Esc}{Alt up}
 ; Mouse scroll
 AppsKey & `;::
  MouseClick,WheelUp,,,1,0,D,R
-return  
+return
 
 AppsKey & /::
  MouseClick,WheelDown,,,1,0,D,R
@@ -115,7 +128,7 @@ Return
 AppsKey & 9::SendInput {Scrolllock}
 
 AppsKey & 8::
- SendInput {Click,Right} 
+ SendInput {Click,Right}
 Return
 
 AppsKey & r::
@@ -130,7 +143,17 @@ Return
 ;Activate Hangouts
 AppsKey & 1::
  SendInput {LWin down}{3}
- SendInput {LWin up}{3}
+ Sleep, 200
+ SendInput {LWin up}
+ CoordMode, Mouse, Window
+ MouseMove, 166, 135, 0
+ CoordMode, Mouse, Relative
+Return
+
+#c::
+  SendInput {Alt Down}{F4}
+  Sleep, 100
+  SendInput {Alt Up}
 Return
 
 ; switch window with asking
@@ -192,7 +215,9 @@ AppsKey & F9::
  {
    WinActivate
    SendInput {Space}
-   SendInput {LWin down}{2}{LWin up}
+   SendInput {LWin down}{2}
+   sleep, 300
+   SendInput {LWin up}
    WinActivate, %currWindow%
  }
 Return
@@ -241,7 +266,7 @@ return
     Run calc.exe
     WinWait Calculator
     WinActivate
-  } 
+  }
 Return
 
 ; **** Mark Mouse Positions
@@ -261,3 +286,31 @@ Return
 
 ^SPACE::  Winset, Alwaysontop, , A
 
+#o::
+ SetTitleMatchMode, 2
+ IfWinExist, Microsoft Outlook
+ {
+     WinActivate
+     SendInput {Ctrl Down}{Shift Down}{i}
+     Sleep, 100
+     SendInput {Ctrl Up}{Shift Up}
+     Sleep, 100
+     SendInput {Home}
+     Sleep, 100
+     SendInput {Shift Down}{F6}
+     Sleep, 100
+     SendInput {Shift Up}
+}
+Return
+
+ShellMessage( wParam,lParam ) {
+  If ( wParam = 0x8006 ) ;  0x8006 is 32774 as shown in Spy!
+    {
+        global flashWinID
+        flashWinID := lParam
+    }
+}
+
+#h::
+  WinActivate, ahk_id %flashWinID%
+Return

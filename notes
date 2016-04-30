@@ -72,23 +72,23 @@ WIN+
 
 a -
 b - Notification area
-c -
+c - MINE .. Alt-F4
 d - Desktop
 e - Explorer
 f - Find File
 g -
-h -
-i -                                              1     2     3     4     5     6     7     8     9     0
-j -                                                  <-- nth window --   --            --        >
+h - MINE - Activate flashing window
+i - MINE - taskList                              1     2     3     4     5     6     7     8     9     0
+j -                                              <--- --  --   --     nth window   --     --    --     >
 k -                                              -----------------------------------------------------------
 l - Lock                                         q     w     e     r     t     y     u     i     o     p       [     ]
-m - Minimize all windows                                     Expl         cyle        acc               pres
+m - Minimize all windows                                     Expl         cyle        acc   Tk-Lt Otlk  pres
 n -                                              -----------------------------------------------------------
-o -                                               a     s     d     f     g     h     j     k     l     ;
-p - Presentation mode                              a-Es  <=    Dktp  File                          Lock
+o - MINE Activate outlook                         a     s     d     f     g     h     j     k     l     ;
+p - Presentation mode                              a-Es  <=    Dktp  File        AcFl              Lock
 q -                                              -----------------------------------------------------------
 r -                                                   z     x     c     v     b     n     m     ,     .     /
-s -                                                          Mob               Not         MinAl
+s -                                                          Mob   a-F4        Not         MinAl
 t - cycle thru prog on taskbar
 u - Accessibility
 v -
@@ -101,3 +101,4 @@ z -
 Links:
 
 Keys - https://autohotkey.com/docs/Hotkeys.htm
+List of Keys - https://www.autohotkey.com/docs/KeyList.htm
