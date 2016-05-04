@@ -74,6 +74,8 @@ AppsKey & p::SendInput {Ctrl down}{p}{Ctrl up}
 AppsKey & q::SendInput {Esc}
 AppsKey & a::SendInput {Alt down}{Esc}{Alt up}
 
+; Availalbe in C:\Users\Default\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\
+AppsKey & e:: Send #{Tab}
 
 ; Make AppsKey & Enter equivalent to Control+Enter
 ; AppsKey & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
@@ -314,3 +316,16 @@ ShellMessage( wParam,lParam ) {
 #h::
   WinActivate, ahk_id %flashWinID%
 Return
+
+; Win+\
+#\::
+  SendMessage 0x112, 0xF140, 0, , Program Manager  ; Start screensaver
+  SendMessage 0x112, 0xF170, 2, , Program Manager  ; Monitor off
+  Return
+
+; Win+Shift+\
+#+\::
+  Run rundll32.exe user32.dll`,LockWorkStation     ; Lock PC
+  Sleep 1000
+  SendMessage 0x112, 0xF170, 2, , Program Manager  ; Monitor off
+  Return
