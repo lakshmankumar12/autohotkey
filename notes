@@ -79,15 +79,15 @@ f - Find File
 g -
 h - MINE - Activate flashing window
 i - MINE - taskList                              1     2     3     4     5     6     7     8     9     0
-j -                                              <--- --  --   --     nth window   --     --    --     >
+j - MINE - vm activate                           <--- --  --   --     nth window   --     --    --     >
 k -                                              -----------------------------------------------------------
 l - Lock                                         q     w     e     r     t     y     u     i     o     p       [     ]
 m - Minimize all windows                                     Expl         cyle        acc   Tk-Lt Otlk  pres
 n -                                              -----------------------------------------------------------
 o - MINE Activate outlook                         a     s     d     f     g     h     j     k     l     ;
-p - Presentation mode                              a-Es  <=    Dktp  File        AcFl              Lock
+p - Presentation mode                              a-Es  <=    Dktp  File        AcFl  vm          Lock
 q -                                              -----------------------------------------------------------
-r -                                                   z     x     c     v     b     n     m     ,     .     /
+r - Run window                                        z     x     c     v     b     n     m     ,     .     /
 s -                                                          Mob   a-F4        Not         MinAl
 t - cycle thru prog on taskbar
 u - Accessibility

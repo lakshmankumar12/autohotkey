@@ -159,6 +159,8 @@ if filterlist <>
     }
 }
 
+#v::Reload
+
 ;----------------------------------------------------------------------
 ;
 ; I never use the CapsLock key, that's why I chose it.

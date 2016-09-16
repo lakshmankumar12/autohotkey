@@ -314,3 +314,11 @@ ShellMessage( wParam,lParam ) {
 #h::
   WinActivate, ahk_id %flashWinID%
 Return
+
+#j::
+  IfWinExist CentOS 6.x Desktop
+  {
+    WinActivate
+  }
+Return
+
