@@ -322,3 +322,14 @@ Return
   }
 Return
 
+#n::
+  IfWinExist personal ubuntu
+  {
+    WinActivate
+  }
+Return
+
+#y::
+  SendInput {LWin Down}{9}{LWin Up}
+  SendInput {Ctrl Down}{1}{Ctrl Up}
+Return
