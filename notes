@@ -88,10 +88,10 @@ o - MINE Activate outlook                         a     s     d     f     g     
 p - Presentation mode                              a-Es  <=    Dktp  File        AcFl  vm          Lock
 q -                                              -----------------------------------------------------------
 r - Run window                                        z     x     c     v     b     n     m     ,     .     /
-s -                                                          Mob   a-F4        Not         MinAl
+s -                                                          Mob   a-F4  zoom  Not         MinAl
 t - cycle thru prog on taskbar
 u - Accessibility
-v -
+v - ctrl-scroll-up(zoom)
 w -
 x - Mobility
 y - 2nd-chrome-profile, 1st tab

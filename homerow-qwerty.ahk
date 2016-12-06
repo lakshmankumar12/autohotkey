@@ -333,3 +333,9 @@ Return
   SendInput {LWin Down}{9}{LWin Up}
   SendInput {Ctrl Down}{1}{Ctrl Up}
 Return
+
+#v::
+  MouseClick
+  SendInput {Ctrl Down}{WheelUp 20}{Ctrl Up}
+Return
+
