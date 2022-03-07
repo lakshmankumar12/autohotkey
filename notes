@@ -20,7 +20,7 @@ r - Apps key
 s - Backspace
 t - ctrl-t
 u - Mouse-move down - fast
-v - None
+v - Same as ] - Shift Ins
 w - ctrl-w
 x - Del
 y - Mouse-move left fast
@@ -63,7 +63,7 @@ q     w     e     r     t     y     u     i     o     p       [     ]
   a-Es  <=    PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
 -----------------------------------------------------------
      z     x     c     v     b     n     m     ,     .     /
-      CATb  Del   c-c   None  None  <-m   v-m   Up-m  ->m   ScrlDwn
+      CATb  Del   c-c   S-Ins None  <-m   v-m   Up-m  ->m   ScrlDwn
 
 
 Combo keys in windows

@@ -57,6 +57,9 @@ AppsKey & 3 up::SendInput {Ctrl Up}{PgDn Up}
 AppsKey & ]::SendInput {Shift Down}{Ins Down}
 AppsKey & ] up::SendInput {Shift Up}{Ins Up}
 
+AppsKey & v::SendInput {Shift Down}{Ins Down}
+AppsKey & v up::SendInput {Shift Up}{Ins Up}
+
 
 ; AppsKey + xiwe pBS
 
@@ -338,4 +341,3 @@ Return
   MouseClick
   SendInput {Ctrl Down}{WheelUp 20}{Ctrl Up}
 Return
-
