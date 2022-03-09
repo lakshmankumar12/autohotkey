@@ -1,9 +1,9 @@
 
 a - alt-esc
 b - None
-c - ctrl-c
+c - ctrl-c (dont change - this help help to copy as you expect ctrl-c)
 d - Page-Down
-e - windows-switcher
+e - load clipboard file
 f - Page-UP
 g - main Mouse click
 h - Left
@@ -20,13 +20,13 @@ r - Apps key
 s - Backspace
 t - ctrl-t
 u - Mouse-move down - fast
-v - Same as ] - Shift Ins
+v - Same as ] - Shift Ins (dont change - same as paste in windows)
 w - ctrl-w
 x - Del
 y - Mouse-move left fast
 z - ctrl-alt-tab
 
-1 - Hangout
+1 - Slack
 2 - Ctrl-Pg Dn
 3 - Ctrl-Pg Up
 4 - End
@@ -37,7 +37,8 @@ z - ctrl-alt-tab
 9 - scroll lock
 0 - Home
 
-] - Shift Ins
+[ - control shift tab
+] - control tab
 
 F1 - none
 F2 - none
@@ -54,16 +55,16 @@ F12 - win Title
 
 
 1     2     3     4     5     6     7     8     9     0
- Hgot  <==   ==>   End   al-tb MsHl c-u    RClk  ScLk  Home
+ Slck  <==   ==>   End   al-tb MsHl c-u    RClk  ScLk  Home
 -----------------------------------------------------------
-q     w     e     r     t     y     u     i     o     p       [     ]
- Esc   c-w  W-Sw  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  None  S-Ins
+q     w     e     r     t     y     u     i     o     p       [       ]
+ Esc   c-w  clip  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  c-S-tab c-tab
 -----------------------------------------------------------
  a     s     d     f     g     h     j     k     l     ;
   a-Es  <=    PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
 -----------------------------------------------------------
      z     x     c     v     b     n     m     ,     .     /
-      CATb  Del   c-c   S-Ins None  <-m   v-m   Up-m  ->m   ScrlDwn
+      c-a-T Del   c-c   S-Ins None  <-m   v-m   Up-m  ->m   ScrlDwn
 
 
 Combo keys in windows

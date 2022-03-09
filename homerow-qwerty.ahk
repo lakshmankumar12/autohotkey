@@ -54,11 +54,15 @@ AppsKey & 2 up::SendInput {Ctrl Up}{PgUp Up}
 AppsKey & 3::SendInput {Ctrl Down}{PgDn Down}
 AppsKey & 3 up::SendInput {Ctrl Up}{PgDn Up}
 
-AppsKey & ]::SendInput {Shift Down}{Ins Down}
-AppsKey & ] up::SendInput {Shift Up}{Ins Up}
-
 AppsKey & v::SendInput {Shift Down}{Ins Down}
 AppsKey & v up::SendInput {Shift Up}{Ins Up}
+
+AppsKey & ]::SendInput {Ctrl down}{Tab Down}
+AppsKey & ] up::SendInput {Ctrl Up}{Tab Up}
+
+AppsKey & [::SendInput {Ctrl down}{Shift Down}{Tab Down}
+AppsKey & [ up::SendInput {Ctrl Up}{Shift Up}{Tab Up}
+
 
 
 ; AppsKey + xiwe pBS
@@ -143,14 +147,16 @@ AppsKey & z::
  SendInput {Ctrl Up}{Alt Up}{Tab Up}
 Return
 
-;Activate Hangouts
+AppsKey & e::
+ FileRead, clipboard, C:\Users\laksh\Documents\cliptest.txt
+Return
+
+;Active slack
 AppsKey & 1::
- SendInput {LWin down}{3}
- Sleep, 200
- SendInput {LWin up}
- CoordMode, Mouse, Window
- MouseMove, 166, 135, 0
- CoordMode, Mouse, Relative
+ IfWinExist Slack
+ {
+   WinActivate
+ }
 Return
 
 #c::
