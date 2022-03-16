@@ -73,7 +73,6 @@ AppsKey & t::SendInput {Ctrl down}{t}{Ctrl up}
 AppsKey & c::SendInput {Ctrl down}{c}{Ctrl up}
 AppsKey & 7::SendInput {Ctrl down}{u}{Ctrl up}
 
-AppsKey & s::SendInput {Blind}{BS Down}{BS Up}
 AppsKey & BS::SendInput {Blind}{BS Down}{BS Up}
 
 AppsKey & p::SendInput {Ctrl down}{p}{Ctrl up}
@@ -151,12 +150,19 @@ AppsKey & e::
  FileRead, clipboard, C:\Users\laksh\Documents\cliptest.txt
 Return
 
-;Active slack
 AppsKey & 1::
- IfWinExist Slack
+ IfWinExist 78.46.81.50 - PuTTY
  {
    WinActivate
  }
+Return
+
+;Activate slack
+AppsKey & s::
+  IfWinExist Slack
+  {
+      WinActivate
+  }
 Return
 
 #c::
@@ -233,7 +239,7 @@ Return
 
 ;Active putty
 AppsKey & F11::
- IfWinExist, lakshmankumar.ddns.net
+ IfWinExist, DESKTOP-B1MHBP3
  {
    WinActivate
  }

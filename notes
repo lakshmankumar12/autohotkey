@@ -14,10 +14,10 @@ l - Right
 m - Mouse-move down - slow
 n - Mouse-move left - slow
 o - Mouse-move right - fast
-p - Back space
+p - Ctrl-p
 q - Esc
 r - Apps key
-s - Backspace
+s - Activate slack
 t - ctrl-t
 u - Mouse-move down - fast
 v - Same as ] - Shift Ins (dont change - same as paste in windows)
@@ -26,7 +26,7 @@ x - Del
 y - Mouse-move left fast
 z - ctrl-alt-tab
 
-1 - Slack
+1 - Putty
 2 - Ctrl-Pg Dn
 3 - Ctrl-Pg Up
 4 - End
@@ -48,20 +48,20 @@ F5 - vol-down
 F6 - vol-up
 F7 - browser-back
 F8 - browser-fwd
-F9 - google-play-music
-F10 - work rave
-F11 - putty
+F9 - work-profile chrome
+F10 - personal-profile chrome
+F11 - local-virt-box putty
 F12 - win Title
 
 
 1     2     3     4     5     6     7     8     9     0
- Slck  <==   ==>   End   al-tb MsHl c-u    RClk  ScLk  Home
+ Pty   <==   ==>   End   al-tb MsHl c-u    RClk  ScLk  Home
 -----------------------------------------------------------
 q     w     e     r     t     y     u     i     o     p       [       ]
  Esc   c-w  clip  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  c-S-tab c-tab
 -----------------------------------------------------------
  a     s     d     f     g     h     j     k     l     ;
-  a-Es  <=    PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
+  a-Es  Slck  PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
 -----------------------------------------------------------
      z     x     c     v     b     n     m     ,     .     /
       c-a-T Del   c-c   S-Ins None  <-m   v-m   Up-m  ->m   ScrlDwn
