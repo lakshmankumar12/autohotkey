@@ -5,10 +5,10 @@
 
 ```
 F1   F2    F3    F4    F5    F6    F7    F8    F9    F10   F11  F12
-none none none  Pause VoUp  VoDn  Back  Fwd   WrCh  PsCh  Pty  Dtls
+none none none  Pause VoUp  VoDn  Back  Fwd   WrCh  PsCh   ---  Dtls
 -----------------------------------------------------------
  1     2     3     4     5     6     7     8     9     0
- Pty   <==   ==>   End   al-tb MsHl c-u    RClk  ScLk  Home
+ Pty1  Pty2  VSC   End   al-tb MsHl c-u    RClk  ScLk  Home
  -----------------------------------------------------------
   q     w     e     r     t     y     u     i     o     p       [       ]
   Esc   c-w  clip  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  c-S-tab c-tab
@@ -17,13 +17,13 @@ none none none  Pause VoUp  VoDn  Back  Fwd   WrCh  PsCh  Pty  Dtls
    a-Es  Slck  PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
    -----------------------------------------------------------
     z     x     c     v     b     n     m     ,     .     /
-    c-a-T Del   c-c   S-Ins ----  <-m   v-m   Up-m  ->m   ScrlDwn
+    c-a-T Del   c-c   S-Ins  Adb  <-m   v-m   Up-m  ->m   ScrlDwn
 ```
 
 ## Alphabetical order
 
 a - alt-esc
-b - None
+b - Adobe
 c - ctrl-c (dont change - this help help to copy as you expect ctrl-c)
 d - Page-Down
 e - load clipboard file
@@ -49,9 +49,9 @@ x - Del
 y - Mouse-move left fast
 z - ctrl-alt-tab
 
-1 - Putty
-2 - Ctrl-Pg Dn
-3 - Ctrl-Pg Up
+1 - Work-Putty
+2 - local-virt-box putty
+3 - Visual Studio Code
 4 - End
 5 - Ask and switch window
 6 - Mouse Highlight
@@ -73,7 +73,7 @@ F7 - browser-back
 F8 - browser-fwd
 F9 - work-profile chrome
 F10 - personal-profile chrome
-F11 - local-virt-box putty
+F11 -
 F12 - win Title
 
 # Win Keys Assignment
@@ -125,6 +125,7 @@ z - WIN  - Snap layout panel
 
 # Links
 
+[My Original source](http://duartes.org/gustavo/blog/home-row-computing)
 [Keys](https://autohotkey.com/docs/Hotkeys.htm)
 [List of Keys](https://www.autohotkey.com/docs/KeyList.htm)
 https://www.xda-developers.com/windows-11-keyboard-shortcuts/
