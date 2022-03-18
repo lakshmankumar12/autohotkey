@@ -255,12 +255,6 @@ AppsKey & s::
   }
 Return
 
-#c::
-  SendInput {Alt Down}{F4}
-  Sleep, 100
-  SendInput {Alt Up}
-Return
-
 ; switch window with asking
 AppsKey & 5::
   InputBox, WindowTitleToMatch, Window Title, Enter a title string., , 275, 120
@@ -279,9 +273,6 @@ AppsKey & 5::
      }
   }
 Return
-
-; Make Windows Key + Apps Key work like Caps Lock
-#AppsKey::Capslock
 
 AppsKey & F4::
   Send {Media_Play_Pause}
@@ -367,23 +358,6 @@ Return
 
 ^SPACE::  Winset, Alwaysontop, , A
 
-#o::
- SetTitleMatchMode, 2
- IfWinExist, Microsoft Outlook
- {
-     WinActivate
-     SendInput {Ctrl Down}{Shift Down}{i}
-     Sleep, 100
-     SendInput {Ctrl Up}{Shift Up}
-     Sleep, 100
-     SendInput {Home}
-     Sleep, 100
-     SendInput {Shift Down}{F6}
-     Sleep, 100
-     SendInput {Shift Up}
-}
-Return
-
 ShellMessage( wParam,lParam ) {
   If ( wParam = 0x8006 ) ;  0x8006 is 32774 as shown in Spy!
     {
@@ -392,30 +366,21 @@ ShellMessage( wParam,lParam ) {
     }
 }
 
+; Make Windows Key + Apps Key work like Caps Lock
+#AppsKey::Capslock
+
+#c::
+  SendInput {Alt Down}{F4}
+  Sleep, 100
+  SendInput {Alt Up}
+Return
+
 #h::
   WinActivate, ahk_id %flashWinID%
 Return
 
 #j::
-  IfWinExist CentOS 6.x Desktop
-  {
-    WinActivate
-  }
-Return
-
-#n::
-  IfWinExist personal ubuntu
-  {
-    WinActivate
-  }
-Return
-
-#y::
-  SendInput {LWin Down}{9}{LWin Up}
-  SendInput {Ctrl Down}{1}{Ctrl Up}
-Return
-
-#v::
   MouseClick
   SendInput {Ctrl Down}{WheelUp 20}{Ctrl Up}
 Return
+
