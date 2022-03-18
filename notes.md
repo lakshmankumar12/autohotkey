@@ -22,6 +22,7 @@ none none none  Pause VoUp  VoDn  Back  Fwd   WrCh  PsCh   ---  Dtls
 
 ## Alphabetical order
 
+```
 a - alt-esc
 b - Adobe
 c - ctrl-c (dont change - this help help to copy as you expect ctrl-c)
@@ -75,6 +76,7 @@ F9 - work-profile chrome
 F10 - personal-profile chrome
 F11 -
 F12 - win Title
+```
 
 # Win Keys Assignment
 
@@ -96,6 +98,7 @@ F12 - win Title
 
 ## Alphabetical order
 
+```
 a - WIN  .. Quick Settings
 b -
 c - MINE .. Alt-F4
@@ -122,6 +125,7 @@ w - WIN  - widget panel
 x - WIN  - Mobility (shutdown etc..)
 y -
 z - WIN  - Snap layout panel
+```
 
 # Links
 
