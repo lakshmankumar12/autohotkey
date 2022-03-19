@@ -163,10 +163,10 @@ AppsKey & t::SendInput {Ctrl down}{t}{Ctrl up}
 AppsKey & c::SendInput {Ctrl down}{c}{Ctrl up}
 AppsKey & 7::SendInput {Ctrl down}{u}{Ctrl up}
 AppsKey & p::SendInput {Ctrl down}{p}{Ctrl up}
+AppsKey & q::SendInput {Alt down}{q}{Alt up}
 
 AppsKey & BS::SendInput {Blind}{BS Down}{BS Up}
 
-AppsKey & q::SendInput {Esc}
 AppsKey & a::SendInput {Alt down}{Esc}{Alt up}
 
 ; Mouse scroll

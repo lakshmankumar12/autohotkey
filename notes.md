@@ -11,7 +11,7 @@ none none none  Pause VoUp  VoDn  Back  Fwd   WrCh  PsCh   ---  Dtls
  Pty1  Pty2  VSC   End   al-tb MsHl c-u    RClk  ScLk  Home
  -----------------------------------------------------------
   q     w     e     r     t     y     u     i     o     p       [       ]
-  Esc   c-w  clip  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  c-S-tab c-tab
+  a-q   c-w  clip  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  c-S-tab c-tab
   -----------------------------------------------------------
    a     s     d     f     g     h     j     k     l     ;
    a-Es  Slck  PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
@@ -39,7 +39,7 @@ m - Mouse-move down - slow
 n - Mouse-move left - slow
 o - Mouse-move right - fast
 p - Ctrl-p
-q - Esc
+q - Alt-q  (to aid the quickey extension of chrome)
 r - Apps key
 s - Activate slack
 t - ctrl-t
