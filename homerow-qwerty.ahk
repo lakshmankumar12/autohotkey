@@ -309,6 +309,14 @@ AppsKey & s::
   }
 Return
 
+;Activate YTM
+F11::
+  IfWinExist YouTube Music
+  {
+      WinActivate
+  }
+Return
+
 ; switch window with asking
 AppsKey & 5::
   InputBox, WindowTitleToMatch, Window Title, Enter a title string., , 275, 120
