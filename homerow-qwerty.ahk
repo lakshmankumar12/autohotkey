@@ -161,7 +161,6 @@ AppsKey & x::SendInput {Del Down}{Del up}
 AppsKey & w::SendInput {Ctrl down}{w}{Ctrl up}
 AppsKey & t::SendInput {Ctrl down}{t}{Ctrl up}
 AppsKey & c::SendInput {Ctrl down}{c}{Ctrl up}
-AppsKey & 7::SendInput {Ctrl down}{u}{Ctrl up}
 AppsKey & p::SendInput {Ctrl down}{p}{Ctrl up}
 AppsKey & q::SendInput {Alt down}{q}{Alt up}
 
@@ -269,7 +268,7 @@ Return
 
 ;Active putty - work
 AppsKey & 1::
- IfWinExist 78.46.81.50 - PuTTY
+ IfWinExist moshHetz
  {
    WinActivate
  }
@@ -277,14 +276,20 @@ Return
 
 ;Active putty - local
 AppsKey & 2::
- IfWinExist, DESKTOP-B1MHBP3
+ IfWinExist, MyVMFirst
  {
    WinActivate
  }
 Return
 
-;Active putty - local
 AppsKey & 3::
+ IfWinExist, MyVMSecond
+ {
+   WinActivate
+ }
+Return
+
+AppsKey & 7::
  SetTitleMatchMode, 2
  IfWinExist, Visual Studio Code
  {
@@ -303,6 +308,7 @@ Return
 
 ;Activate slack
 AppsKey & s::
+  SetTitleMatchMode, 2
   IfWinExist Slack
   {
       WinActivate
@@ -310,8 +316,16 @@ AppsKey & s::
 Return
 
 ;Activate YTM
-F11::
+AppsKey & F11::
   IfWinExist YouTube Music
+  {
+      WinActivate
+  }
+Return
+
+;Activate WorkRave
+AppsKey & F3::
+  IfWinExist WorkRave
   {
       WinActivate
   }
@@ -375,7 +389,7 @@ AppsKey & 6::
        Gui, 5: Destroy
 Return
 
-F12::
+AppsKey & F12::
 WinGetTitle, title, A
 WinGetTitle, text, A
 WinGetClass, class, A
@@ -410,7 +424,7 @@ Return
 
 ^!r::Reload
 
-^SPACE::  Winset, Alwaysontop, , A
+^!SPACE::  Winset, Alwaysontop, , A
 
 ShellMessage( wParam,lParam ) {
   If ( wParam = 0x8006 ) ;  0x8006 is 32774 as shown in Spy!
