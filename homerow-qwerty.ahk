@@ -300,7 +300,7 @@ Return
 ;Activate Adobe
 AppsKey & b::
  SetTitleMatchMode, 2
- IfWinExist, Adobe Acrobat Reader DC
+ IfWinExist, Adobe Acrobat Reader
  {
    WinActivate
  }

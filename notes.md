@@ -1,4 +1,3 @@
-
 # Apps Key Assignment
 
 ## Layout Pic
@@ -90,22 +89,22 @@ F12 - win Title
   QkAs wid   Expl   Run   cyle  ----  acc   Tk-Lt DvOr  Dsp
  -----------------------------------------------------------
   a     s     d     f     g     h     j     k     l     ;
-   QSet  <=    Dktp  FHub ----   AcFl  zoom  cast  Lock
+   QSet  <=    Dktp  FHub wdgt   AcFl  zoom  cast  Lock
  -----------------------------------------------------------
       z     x     c     v     b     n     m     ,     .     /
-      snap   Mob   a-F4  cliH  ----  Notf  MinAl
+      snap   Mob   a-F4  cliH  sysT  Notf  MinAl
 ```
 
 ## Alphabetical order
 
 ```
 a - WIN  .. Quick Settings
-b -
+b - WIN  .. system tray
 c - MINE .. Alt-F4
 d - WIN  .. Desktop
 e - WIN  .. Explorer
 f - WIN  .. Feedback hub
-g -
+g - WIN  .. widgets
 h - MINE - Activate flashing window
 i - WIN  - Settings
 j - ctrl-scroll-up(zoom)
@@ -125,6 +124,12 @@ w - WIN  - widget panel
 x - WIN  - Mobility (shutdown etc..)
 y -
 z - WIN  - Snap layout panel
+
+up    - WIN - Pin window up
+down  - WIN - Pin window down
+right - WIN - Pin window right
+left  - WIN - Pin window left
+s-up  - WIN - stretch up
 ```
 
 # Links
