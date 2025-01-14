@@ -89,8 +89,8 @@ MsgBox, "Fetching Chrome Instances"
 chrome_hwnd_default := open_chrome_with_profile("Default", "www.google.com")
 MsgBox, "Got ahk_id Default: %chrome_hwnd_default% "
 
-chrome_hwnd_profile4 := open_chrome_with_profile("Profile 4", "www.google.com")
-MsgBox, "Got ahk_id Profile4: %chrome_hwnd_profile4% "
+chrome_hwnd_profile4 := open_chrome_with_profile("Profile 1", "www.google.com")
+MsgBox, "Got ahk_id Profile1: %chrome_hwnd_profile4% "
 
 AppsKey & F9::
     WinActivate, % "ahk_id " . chrome_hwnd_profile4
@@ -162,7 +162,6 @@ AppsKey & w::SendInput {Ctrl down}{w}{Ctrl up}
 AppsKey & t::SendInput {Ctrl down}{t}{Ctrl up}
 AppsKey & c::SendInput {Ctrl down}{c}{Ctrl up}
 AppsKey & p::SendInput {Ctrl down}{p}{Ctrl up}
-AppsKey & q::SendInput {Alt down}{q}{Alt up}
 
 AppsKey & BS::SendInput {Blind}{BS Down}{BS Up}
 
@@ -266,6 +265,10 @@ AppsKey & e::
  FileRead, clipboard, C:\Users\laksh\Documents\cliptest.txt
 Return
 
+AppsKey & q::
+ Run, "c:\Program Files\Python313\python.exe" "c:\Users\laksh\Downloads\work\github\quick-utility-scripts\update_clip_windows.py"
+Return
+
 ;Active putty - work
 AppsKey & 1::
  IfWinExist moshHetz
@@ -283,7 +286,7 @@ AppsKey & 2::
 Return
 
 AppsKey & 3::
- IfWinExist, MyVMSecond
+ IfWinExist, Command Prompt
  {
    WinActivate
  }

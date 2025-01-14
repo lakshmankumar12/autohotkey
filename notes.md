@@ -7,10 +7,10 @@ F1   F2    F3    F4    F5    F6    F7    F8    F9    F10  F11  F12
 ---- ---- ----  Pause VoUp  VoDn  Back  Fwd   WrCh  PsCh   YTM  Dtls
 -----------------------------------------------------------
  1     2     3     4     5     6     7     8     9     0
- Pty1  Pty2  VSC   End   al-tb MsHl c-u    RClk  ScLk  Home
+ Pty1  Pty2  CmP   End   al-tb MsHl c-u    RClk  ScLk  Home
  -----------------------------------------------------------
   q     w     e     r     t     y     u     i     o     p       [       ]
-  a-q   c-w  clip  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  c-S-tab c-tab
+  clip  c-w  clip  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  c-S-tab c-tab
   -----------------------------------------------------------
    a     s     d     f     g     h     j     k     l     ;
    a-Es  Slck  PDn  PUp   Clk   <-     v     Up   ->    ScrlUp
@@ -38,7 +38,7 @@ m - MOUSE  - Mouse-move down - slow
 n - MOUSE  - Mouse-move left - slow
 o - MOUSE  - Mouse-move right - fast
 p - FRKEY  - Ctrl-p
-q - FRKEY  - Alt-q  (to aid the quickey extension of chrome)
+q - FRKEY  - load clipboard file -- using python
 r - FRKEY  - Apps key
 s - HOTKEY - Activate slack
 t - FRKEY  - ctrl-t
@@ -51,7 +51,7 @@ z - WINDWS - ctrl-alt-tab
 
 1 - HOTKEY - Work-Putty
 2 - HOTKEY - local-virt-box putty
-3 - HOTKEY - Visual Studio Code
+3 - HOTKEY - Command Prompt
 4 - FRKEY  - End
 5 - WINDWS - Ask and switch window
 6 - MOUSE  - Mouse Highlight
