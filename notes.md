@@ -4,7 +4,7 @@
 
 ```
 F1   F2    F3    F4    F5    F6    F7    F8    F9    F10  F11  F12
----- ---- ----  Pause VoUp  VoDn  Back  Fwd   WrCh  PsCh   YTM  Dtls
+---- ---- Ch+C  Pause VoUp  VoDn  Back  Fwd   WrCh  PsCh   YTM  Dtls
 -----------------------------------------------------------
  1     2     3     4     5     6     7     8     9     0
  Pty1  Pty2  CmP   End   al-tb MsHl c-u    RClk  ScLk  Home
@@ -22,7 +22,7 @@ F1   F2    F3    F4    F5    F6    F7    F8    F9    F10  F11  F12
 ## Alphabetical order
 
 ```
-a - WINDWS - alt-esc
+a - WINDWS - alt-esc (cycle through windows) -- i dont use this.. can reclaim
 b - HOTKEY - Adobe
 c - FRKEY  - ctrl-c (dont change - this help help to copy as you expect ctrl-c)
 d - NVGTN  - Page-Down
@@ -37,7 +37,7 @@ l - NVGTN  - Right
 m - MOUSE  - Mouse-move down - slow
 n - MOUSE  - Mouse-move left - slow
 o - MOUSE  - Mouse-move right - fast
-p - FRKEY  - Ctrl-p
+p - FRKEY  - Ctrl-p (can reclaim)
 q - FRKEY  - load clipboard file -- using python
 r - FRKEY  - Apps key
 s - HOTKEY - Activate slack
@@ -65,7 +65,7 @@ z - WINDWS - ctrl-alt-tab
 
 F1 - none
 F2 - none
-F3 - none
+F3 - pers-chrome + command-prompt
 F4 - media pause
 F5 - vol-down
 F6 - vol-up

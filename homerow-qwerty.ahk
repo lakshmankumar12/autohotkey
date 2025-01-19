@@ -326,11 +326,12 @@ AppsKey & F11::
   }
 Return
 
-;Activate WorkRave
+;Activate pers-chrome + command prompt on top
 AppsKey & F3::
-  IfWinExist WorkRave
+  WinActivate, % "ahk_id " . chrome_hwnd_default
+  IfWinExist, Command Prompt
   {
-      WinActivate
+    WinActivate
   }
 Return
 
