@@ -85,15 +85,16 @@ open_chrome_with_profile(profile_name:="Default", url:="", wait_for:=5) {
     }
 }
 ; cat /Users/laksh/AppData/Local/Google/Chrome/User Data/Profile 4/Preferences | python3 -m json.tool | grep email
-MsgBox, "Fetching Chrome Instances"
+; MsgBox, "Fetching Chrome Instances"
 chrome_hwnd_default := open_chrome_with_profile("Default", "www.google.com")
-MsgBox, "Got ahk_id Default: %chrome_hwnd_default% "
+; MsgBox, "Got ahk_id Default: %chrome_hwnd_default% "
 
-chrome_hwnd_profile4 := open_chrome_with_profile("Profile 1", "www.google.com")
-MsgBox, "Got ahk_id Profile1: %chrome_hwnd_profile4% "
+chrome_hwnd_profile1 := open_chrome_with_profile("Profile 1", "www.google.com")
+; MsgBox, "Got ahk_id Profile1: %chrome_hwnd_profile1% "
+MsgBox, "Loaded chrome-profiles, personal(default): %chrome_hwnd_default%, work(profile1): %chrome_hwnd_profile1%"
 
 AppsKey & F9::
-    WinActivate, % "ahk_id " . chrome_hwnd_profile4
+    WinActivate, % "ahk_id " . chrome_hwnd_profile1
 Return
 
 AppsKey & F10::
@@ -303,7 +304,7 @@ Return
 ;Activate Adobe
 AppsKey & b::
  SetTitleMatchMode, 2
- IfWinExist, Adobe Acrobat Reader
+ IfWinExist, Foxit PDF Reader
  {
    WinActivate
  }
