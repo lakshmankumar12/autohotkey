@@ -132,6 +132,14 @@ left  - WIN - Pin window left
 s-up  - WIN - stretch up
 ```
 
+# Control-Alt Combinations
+
+c - Calculator
+m - mark mouse
+g - go to marked mouse position
+r - reload auto-hotkey
+Space - Toggle windows on top
+
 # Links
 
 [My Original source](http://duartes.org/gustavo/blog/home-row-computing)
