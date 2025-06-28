@@ -112,9 +112,9 @@ k - WIN  - Cast Panel                   (Grab OK)
 l - WIN  - Lock
 m - WIN  - Minimize all windows
 n - WIN  - Notification
-o - WIN  - Lock device orientation      (Grab OK)
+o - MINE - Outlook
 p - WIN  - Display Mode
-q - WIN  - Quick assist                 (Grab OK)
+q - MINE - Co-pilot
 r - WIN  - Run window
 s - WIN  - Search                       (Grab OK)
 t - WIN  - Cycle through taskbar (Useful!!)
@@ -131,6 +131,15 @@ right - WIN - Pin window right
 left  - WIN - Pin window left
 s-up  - WIN - stretch up
 ```
+
+* overriden windows defaults
+
+```
+o - WIN  - Lock device orientation
+q - WIN  - Quick assist
+
+```
+
 
 # Control-Alt Combinations
 

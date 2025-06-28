@@ -457,3 +457,18 @@ Return
   SendInput {Ctrl Down}{WheelUp 20}{Ctrl Up}
 Return
 
+
+#o::
+ IfWinExist, Mail - Lakshman Kumar Narayanan - Outlook
+ {
+   WinActivate
+ }
+Return
+
+
+#q::
+ IfWinExist, Microsoft 365 Copilot
+ {
+   WinActivate
+ }
+Return
