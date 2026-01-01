@@ -166,8 +166,6 @@ AppsKey & p::SendInput {Ctrl down}{p}{Ctrl up}
 
 AppsKey & BS::SendInput {Blind}{BS Down}{BS Up}
 
-AppsKey & a::SendInput {Alt down}{Esc}{Alt up}
-
 ; Mouse scroll
 AppsKey & `;::
  MouseClick,WheelUp,,,1,0,D,R
@@ -459,7 +457,14 @@ Return
 
 
 #o::
- IfWinExist, Mail - Lakshman Kumar Narayanan - Outlook
+ IfWinExist, ahk_class Outlook Host
+ {
+   WinActivate
+ }
+Return
+
+AppsKey & a::
+ IfWinExist, ahk_class wxWindowNR
  {
    WinActivate
  }

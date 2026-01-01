@@ -22,7 +22,7 @@ F1   F2    F3    F4    F5    F6    F7    F8    F9    F10  F11  F12
 ## Alphabetical order
 
 ```
-a - WINDWS - alt-esc (cycle through windows) -- i dont use this.. can reclaim
+a - HOTKEY - audacity
 b - HOTKEY - Adobe
 c - FRKEY  - ctrl-c (dont change - this help help to copy as you expect ctrl-c)
 d - NVGTN  - Page-Down
