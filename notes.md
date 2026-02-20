@@ -37,7 +37,7 @@ l - NVGTN  - Right
 m - MOUSE  - Mouse-move down - slow
 n - MOUSE  - Mouse-move left - slow
 o - MOUSE  - Mouse-move right - fast
-p - FRKEY  - Ctrl-p (can reclaim)
+p - FRKEY  - Claude
 q - FRKEY  - load clipboard file -- using python
 r - FRKEY  - Apps key
 s - HOTKEY - Activate slack
@@ -55,7 +55,7 @@ z - WINDWS - ctrl-alt-tab
 4 - FRKEY  - End
 5 - WINDWS - Ask and switch window
 6 - MOUSE  - Mouse Highlight
-7 - FRKEY  - ctrl-u
+7 - HOTKEY - Visual studio
 8 - WINDWS - Right click
 9 - FRKEY  - scroll lock
 0 - FRKEY  - Home

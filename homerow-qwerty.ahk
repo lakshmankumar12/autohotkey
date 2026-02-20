@@ -162,7 +162,6 @@ AppsKey & x::SendInput {Del Down}{Del up}
 AppsKey & w::SendInput {Ctrl down}{w}{Ctrl up}
 AppsKey & t::SendInput {Ctrl down}{t}{Ctrl up}
 AppsKey & c::SendInput {Ctrl down}{c}{Ctrl up}
-AppsKey & p::SendInput {Ctrl down}{p}{Ctrl up}
 
 AppsKey & BS::SendInput {Blind}{BS Down}{BS Up}
 
@@ -394,9 +393,11 @@ Return
 
 AppsKey & F12::
 WinGetTitle, title, A
-WinGetTitle, text, A
+WinGetText, text, A
 WinGetClass, class, A
-MsgBox, "title:%title%,\ntext:%text%,\nclass %class%"
+info := "title:" . title . "`ntext:" . text . "`nclass:" . class
+MsgBox, %info%
+Clipboard := info
 return
 
 ^!c::
@@ -470,6 +471,14 @@ AppsKey & a::
  }
 Return
 
+AppsKey & p::
+ IfWinExist Claude
+ {
+   WinActivate
+ }
+Return
+
+Return
 
 #q::
  IfWinExist, Microsoft 365 Copilot
