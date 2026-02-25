@@ -51,7 +51,7 @@ z - WINDWS - ctrl-alt-tab
 
 1 - HOTKEY - Work-Putty
 2 - HOTKEY - local-virt-box putty
-3 - HOTKEY - Command Prompt
+3 - HOTKEY - Activate teams
 4 - FRKEY  - End
 5 - WINDWS - Ask and switch window
 6 - MOUSE  - Mouse Highlight

@@ -284,10 +284,24 @@ AppsKey & 2::
 Return
 
 AppsKey & 3::
- IfWinExist, Command Prompt
- {
-   WinActivate
- }
+  WinGet, winList, List, ahk_class TeamsWebView
+  meetingHwnd := 0
+  fallbackHwnd := 0
+  Loop, %winList%
+  {
+    hwnd := winList%A_Index%
+    WinGetTitle, wTitle, ahk_id %hwnd%
+    if (fallbackHwnd = 0)
+      fallbackHwnd := hwnd
+    if (SubStr(wTitle, 1, 8) != "Calendar" && SubStr(wTitle, 1, 4) != "Chat") {
+      meetingHwnd := hwnd
+      break
+    }
+  }
+  if (meetingHwnd != 0)
+    WinActivate, ahk_id %meetingHwnd%
+  else if (fallbackHwnd != 0)
+    WinActivate, ahk_id %fallbackHwnd%
 Return
 
 AppsKey & 7::
