@@ -293,7 +293,7 @@ AppsKey & 3::
     WinGetTitle, wTitle, ahk_id %hwnd%
     if (fallbackHwnd = 0)
       fallbackHwnd := hwnd
-    if (SubStr(wTitle, 1, 8) != "Calendar" && SubStr(wTitle, 1, 4) != "Chat") {
+    if (SubStr(wTitle, 1, 8) != "Calendar" && SubStr(wTitle, 1, 4) != "Chat" && SubStr(wTitle, 1, 8) != "Activity") {
       meetingHwnd := hwnd
       break
     }
@@ -388,21 +388,19 @@ Return
 
 ;Show where the mouse is
 AppsKey & 6::
-       delay := 200
-       MouseGetPos, value_x, value_y
-       Gui, 5: +AlwaysOnTop -Caption +LastFound +ToolWindow
-       Gui, 5: Color, FF3333
-       WinSet, TransColor, %color% %transparency%
-       Gui,5: Show, x%value_x% y%value_y% w20 h20 noactivate
-       Loop, 1
-       {
-           Sleep, %delay%
-           WinHide
-           Sleep, %delay%
-           WinShow
-       }
-       Sleep, %delay%
-       Gui, 5: Destroy
+    MouseGetPos, value_x, value_y
+    clipboard := "X: " value_x " Y: " value_y
+
+    delay := 200
+    Gui, 5: +AlwaysOnTop -Caption +LastFound +ToolWindow
+    Gui, 5: Color, FF3333
+    Gui, 5: Show, x%value_x% y%value_y% w20 h20 noactivate
+    Sleep, %delay%
+    WinHide
+    Sleep, %delay%
+    WinShow
+    Sleep, %delay%
+    Gui, 5: Destroy
 Return
 
 AppsKey & F12::
@@ -443,6 +441,14 @@ Return
 ^!r::Reload
 
 ^!SPACE::  Winset, Alwaysontop, , A
+
+; ** in claude window there is where the search button is
+^!h::
+    Click, 61, 386
+    SendInput {Click,Left}
+    Click, 1535, 381
+    SendInput {Click,Left}
+Return
 
 ShellMessage( wParam,lParam ) {
   If ( wParam = 0x8006 ) ;  0x8006 is 32774 as shown in Spy!
