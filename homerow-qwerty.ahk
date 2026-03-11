@@ -324,7 +324,11 @@ Return
 ;Activate slack
 AppsKey & s::
   SetTitleMatchMode, 2
-  IfWinExist Slack
+  IfWinExist, Slack, , Huddle
+  {
+      WinActivate
+  }
+  Else IfWinExist Slack
   {
       WinActivate
   }
@@ -444,10 +448,23 @@ Return
 
 ; ** in claude window there is where the search button is
 ^!h::
-    Click, 61, 386
-    SendInput {Click,Left}
-    Click, 1535, 381
-    SendInput {Click,Left}
+    coordFile := A_MyDocuments "\..\Downloads\.ahk_claude_coords.ini"
+    IniRead, x1, %coordFile%, coords, x1
+    IniRead, y1, %coordFile%, coords, y1
+    IniRead, x2, %coordFile%, coords, x2
+    IniRead, y2, %coordFile%, coords, y2
+
+    MouseMove, x1, y1
+    Click, x1, y1
+    Sleep, 200
+    MouseMove, x2, y2
+    Click, x2, y2
+Return
+
+^!i::
+    SysGet, screenW, 78
+    clipboard := "screenW: " screenW
+    MsgBox, screenW: %screenW%
 Return
 
 ShellMessage( wParam,lParam ) {
