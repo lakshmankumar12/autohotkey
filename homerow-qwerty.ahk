@@ -255,8 +255,8 @@ AppsKey & r::
 Return
 
 AppsKey & z::
- SendInput {Ctrl Down}{Alt Down}{Tab Down}
- SendInput {Ctrl Up}{Alt Up}{Tab Up}
+    if (current_interest_window)
+        WinActivate, % "ahk_id " . current_interest_window
 Return
 
 AppsKey & e::
@@ -408,10 +408,11 @@ AppsKey & 6::
 Return
 
 AppsKey & F12::
+WinGet, current_interest_window, ID, A
 WinGetTitle, title, A
 WinGetText, text, A
 WinGetClass, class, A
-info := "title:" . title . "`ntext:" . text . "`nclass:" . class
+info := "title:" . title . "`ntext:" . text . "`nclass:" . class . "`nid:" . current_interest_window
 MsgBox, %info%
 Clipboard := info
 return
