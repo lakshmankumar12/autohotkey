@@ -1,5 +1,16 @@
 # Apps Key Assignment
 
+## autohotkey notations
+
+```
+^  - ctrl
+!  - alt
+#  - win
+
+```
+
+
+
 ## Layout Pic
 
 ```
@@ -7,7 +18,7 @@ F1   F2    F3    F4    F5    F6    F7    F8    F9    F10  F11  F12
 ---- ---- Ch+C  Pause VoUp  VoDn  Back  Fwd   WrCh  PsCh   YTM  Dtls
 -----------------------------------------------------------
  1     2     3     4     5     6     7     8     9     0
- Pty1  Pty2  Cld   End   al-tb MsHl vscode RClk  ScLk  Home
+ Pty1  Pty2  teams End   al-tb MsHl vscode RClk  ScLk  Home
  -----------------------------------------------------------
   q     w     e     r     t     y     u     i     o     p       [       ]
   clip  c-w  clip  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  c-S-tab c-tab
@@ -98,46 +109,40 @@ F12 - win Title
 ## Alphabetical order
 
 ```
-a - WIN  .. Quick Settings
-b - WIN  .. system tray
-c - MINE .. Alt-F4
-d - WIN  .. Desktop
-e - WIN  .. Explorer
-f - WIN  .. Feedback hub
-g - WIN  .. widgets
-h - MINE - Activate flashing window
-i - WIN  - Settings
-j - ctrl-scroll-up(zoom)
-k - WIN  - Cast Panel                   (Grab OK)
-l - WIN  - Lock
-m - WIN  - Minimize all windows
-n - WIN  - Notification
-o - MINE - Outlook
-p - WIN  - Display Mode
-q - MINE - Co-pilot
-r - WIN  - Run window
-s - WIN  - Search                       (Grab OK)
-t - WIN  - Cycle through taskbar (Useful!!)
-u - WIN  - Accessibilty
-v - WIN  - Clip History
-w - WIN  - widget panel
-x - WIN  - Mobility (shutdown etc..)
-y -
-z - WIN  - Snap layout panel
+    Windows Default        Comment                  Mine
+
+a - Quick Settings         Useful-Default-Leave
+b - system tray            Useful-Default-Leave
+c -                                                 GRAB
+d - Desktop                Useful-Default-Leave
+e - Explorer (new window)  Default-opens-new-window  Activate existing explorer window
+f - Feedback hub                                    GRAB
+g - xbox game bar          Not-that-useful
+h - Launches voice typing  Not-that-useful          Activate flashing window
+i - Settings               Useful-Default-Leave
+j - Not clear                                       ctrl-scroll-up(zoom)
+k - Cast Panel             Useful-Default-Leave
+l - Lock                   Useful-Default-Leave
+m - Minimize all windows   Almost-dup-of-win-D      GRAB
+n - Notification           Useful-Default-Leave
+o - Lock Device Oriention  Not-that-useful          GRAB
+p - Display Mode
+q - Windows-search         Not-that-useful          GRAB
+r - Run window             Useful-Default-Leave
+s - Windows-search         Not-that-useful          GRAB
+t - Cycle through taskbar  Useful-Default-Leave
+u - Accessibilty           Not-that-useful          GRAB
+v - Clip History           Useful-Default-Leave
+w - widget panel           Useful-Default-Leave
+x - power user menu        Useful-Default-Leave
+y - some-vr-only shortcut  Not-that-useful          GRAB
+z - Snap layout panel      Useful-Default-Leave
 
 up    - WIN - Pin window up
 down  - WIN - Pin window down
 right - WIN - Pin window right
 left  - WIN - Pin window left
 s-up  - WIN - stretch up
-```
-
-* overriden windows defaults
-
-```
-o - WIN  - Lock device orientation
-q - WIN  - Quick assist
-
 ```
 
 
@@ -148,6 +153,7 @@ m - mark mouse
 g - go to marked mouse position
 r - reload auto-hotkey
 Space - Toggle windows on top
+h, i - tried claude window stuff. but didn't work
 
 # Links
 

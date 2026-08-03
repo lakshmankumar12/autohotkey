@@ -1,3 +1,4 @@
 .*.swp
 gdip/tutorials
 claude_input*
+.cache/

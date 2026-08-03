@@ -165,6 +165,10 @@ AppsKey & c::SendInput {Ctrl down}{c}{Ctrl up}
 
 AppsKey & BS::SendInput {Blind}{BS Down}{BS Up}
 
+; Disable physical scroll wheel
+WheelUp::return
+WheelDown::return
+
 ; Mouse scroll
 AppsKey & `;::
  MouseClick,WheelUp,,,1,0,D,R
@@ -479,12 +483,6 @@ ShellMessage( wParam,lParam ) {
 ; Make Windows Key + Apps Key work like Caps Lock
 #AppsKey::Capslock
 
-#c::
-  SendInput {Alt Down}{F4}
-  Sleep, 100
-  SendInput {Alt Up}
-Return
-
 #h::
   WinActivate, ahk_id %flashWinID%
 Return
@@ -495,11 +493,15 @@ Return
 Return
 
 
-#o::
- IfWinExist, ahk_class Outlook Host
- {
-   WinActivate
- }
+#e::
+  IfWinExist, ahk_class CabinetWClass
+  {
+    WinActivate
+  }
+  else
+  {
+    Run explorer.exe
+  }
 Return
 
 AppsKey & a::
@@ -516,11 +518,4 @@ AppsKey & p::
  }
 Return
 
-Return
-
-#q::
- IfWinExist, Microsoft 365 Copilot
- {
-   WinActivate
- }
 Return
