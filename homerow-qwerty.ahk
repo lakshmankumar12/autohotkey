@@ -287,25 +287,21 @@ AppsKey & 2::
  }
 Return
 
+;Activate the Google Meet window (a chrome meet-tab pulled out into its own window)
 AppsKey & 3::
-  WinGet, winList, List, ahk_class TeamsWebView
-  meetingHwnd := 0
-  fallbackHwnd := 0
+  WinGet, winList, List, ahk_class Chrome_WidgetWin_1
+  meetHwnd := 0
   Loop, %winList%
   {
     hwnd := winList%A_Index%
     WinGetTitle, wTitle, ahk_id %hwnd%
-    if (fallbackHwnd = 0)
-      fallbackHwnd := hwnd
-    if (SubStr(wTitle, 1, 8) != "Calendar" && SubStr(wTitle, 1, 4) != "Chat" && SubStr(wTitle, 1, 8) != "Activity") {
-      meetingHwnd := hwnd
+    if (SubStr(wTitle, 1, 7) = "Meet - ") {
+      meetHwnd := hwnd
       break
     }
   }
-  if (meetingHwnd != 0)
-    WinActivate, ahk_id %meetingHwnd%
-  else if (fallbackHwnd != 0)
-    WinActivate, ahk_id %fallbackHwnd%
+  if (meetHwnd != 0)
+    WinActivate, ahk_id %meetHwnd%
 Return
 
 AppsKey & 7::

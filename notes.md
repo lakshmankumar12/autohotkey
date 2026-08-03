@@ -18,7 +18,7 @@ F1   F2    F3    F4    F5    F6    F7    F8    F9    F10  F11  F12
 ---- ---- Ch+C  Pause VoUp  VoDn  Back  Fwd   WrCh  PsCh   YTM  Dtls
 -----------------------------------------------------------
  1     2     3     4     5     6     7     8     9     0
- Pty1  Pty2  teams End   al-tb MsHl vscode RClk  ScLk  Home
+ Pty1  Pty2  meet  End   al-tb MsHl vscode RClk  ScLk  Home
  -----------------------------------------------------------
   q     w     e     r     t     y     u     i     o     p       [       ]
   clip  c-w  clip  app   c-t   <-M   v-M   Up-M  ->M   ctrl-p  c-S-tab c-tab
@@ -62,7 +62,7 @@ z - WINDWS - activate current-interest-window
 
 1 - HOTKEY - Work-Putty
 2 - HOTKEY - local-virt-box putty
-3 - HOTKEY - Activate teams
+3 - HOTKEY - Activate google-meet window (title starts with "Meet - ")
 4 - FRKEY  - End
 5 - WINDWS - Ask and switch window
 6 - MOUSE  - Mouse Highlight
