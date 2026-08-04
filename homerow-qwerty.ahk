@@ -287,21 +287,27 @@ AppsKey & 2::
  }
 Return
 
-;Activate the Google Meet window (a chrome meet-tab pulled out into its own window)
+;Activate the Google Meet window (the dedicated meet-app, class is still chrome's)
+;In a meeting the title is "Google Meet - Meet - <meet-code>"; otherwise "Google Meet"
 AppsKey & 3::
   WinGet, winList, List, ahk_class Chrome_WidgetWin_1
   meetHwnd := 0
+  fallbackHwnd := 0
   Loop, %winList%
   {
     hwnd := winList%A_Index%
     WinGetTitle, wTitle, ahk_id %hwnd%
-    if (SubStr(wTitle, 1, 7) = "Meet - ") {
+    if (SubStr(wTitle, 1, 14) = "Google Meet - ") {
       meetHwnd := hwnd
       break
     }
+    if (fallbackHwnd = 0 && SubStr(wTitle, 1, 11) = "Google Meet")
+      fallbackHwnd := hwnd
   }
   if (meetHwnd != 0)
     WinActivate, ahk_id %meetHwnd%
+  else if (fallbackHwnd != 0)
+    WinActivate, ahk_id %fallbackHwnd%
 Return
 
 AppsKey & 7::

@@ -62,7 +62,7 @@ z - WINDWS - activate current-interest-window
 
 1 - HOTKEY - Work-Putty
 2 - HOTKEY - local-virt-box putty
-3 - HOTKEY - Activate google-meet window (title starts with "Meet - ")
+3 - HOTKEY - Activate google-meet app window (title starts with "Google Meet")
 4 - FRKEY  - End
 5 - WINDWS - Ask and switch window
 6 - MOUSE  - Mouse Highlight
